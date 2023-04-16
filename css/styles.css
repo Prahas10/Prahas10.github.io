@@ -1,0 +1,187 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #444444;
+}
+
+/* Headings */
+.intro {
+  line-height: 1.6;
+  padding-top: -35%;
+}
+
+.intro::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ffa500;
+  color: #000000;
+}
+
+.white-section {
+  background-color: #14d5c7;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: Georgia, cursive;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.nav-item {
+  padding: 0 12px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Light";
+  color: #0072ef;
+  font-weight: bold;
+}
+
+/* Title Section */
+#title {
+  background-color: #ffa500;
+  color: #000000;
+  text-align: left;
+  margin-bottom: -2.5%;
+}
+
+#title .container-fluid {
+  padding: 4%;
+}
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  transform: rotate(16deg);
+  position: relative;
+  left: 40%;
+}
+
+/* Nandi Section */
+.nandi-img {
+  position: relative;
+  width: 90%;
+  left: 40%;
+  margin-top: 50%;
+}
+
+.nandi-heading {
+  font-size: 3.5rem;
+}
+
+/* Hampi */
+#testimonials {
+  background-color: #ffa500;
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 35%;
+  border-radius: 40%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ffa500;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .nandi-img {
+    position: static;
+    transition: auto;
+  }
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.image-container:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
